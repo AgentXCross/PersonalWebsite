@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
@@ -45,8 +46,11 @@
         <!-- Section 1: Introduction and Headshot -->
          <section class="hero-section">
             <div class="text">
-                <h2>Hi, I'm Michael 🏃‍♂️</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos, sit assumenda ex corrupti impedit maxime voluptatum iure eius voluptas quibusdam doloribus excepturi ipsum, nisi fugit consectetur nesciunt cupiditate fugiat aliquid molestiae nam? Nam fuga ab mollitia harum in dolor doloribus, provident expedita, accusantium placeat ducimus quasi. Pariatur, excepturi voluptate.</p>
+                <h2 class="hero-title">Hi, I'm Michael</h2>
+                <p>I'm a Mathematics student at the University of Waterloo. I'm excited to explore data science, finance, and AI/ML.
+                Currently, I'm working on some fun SciKit-Learn classical machine learning models while learning PyTorch for deep learning. 
+                Outside school, I’ve coached tennis for 4 years @ Unionville Tennis Club and one winter @ Premier Racquet Clubs Markham.
+                Also a long-distance runner.</p>
                 <div class="links">
                     <a href="#skills">
                         <i class="fa-solid fa-laptop-code"></i>
@@ -126,7 +130,7 @@
 
         <!-- Section 3: Work Experience -->
          <section id="experience">
-            <h2>Experiences</h2>
+            <h2>Work Experiences</h2>
                 <div class="experience-card">
                     <!-- Left side (dates & location) -->
                     <div class="experience-left">
@@ -231,7 +235,28 @@
          </section>
 
         <!-- Section 4: Contact -->
-         <section id="contact"></section>
+         <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">  
+                <div class="text">
+                    m529liu@uwaterloo.ca <br>
+                    Form currently doesn't work
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+         </section>
     </main>
 </body>
 </html>
