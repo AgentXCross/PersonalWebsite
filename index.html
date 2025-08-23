@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel = "stylesheet" href = "styles.css"> 
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <a href="index.html">Michael Liu</a>
+        </div>
+
+        <div class="right"> 
+            <a href="https://github.com/AgentXCross" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/michael-liu-522804366/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-file"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section 1: Introduction and Headshot -->
+         <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Michael 🏃‍♂️</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eos, sit assumenda ex corrupti impedit maxime voluptatum iure eius voluptas quibusdam doloribus excepturi ipsum, nisi fugit consectetur nesciunt cupiditate fugiat aliquid molestiae nam? Nam fuga ab mollitia harum in dolor doloribus, provident expedita, accusantium placeat ducimus quasi. Pariatur, excepturi voluptate.</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#experience">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Experience</span>
+                    </a>
+
+                    <a href="#extracurriculars">
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>ECAs</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-at"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="images/headshot.webp" alt="michael headshot">
+            </div>
+         </section>
+
+        <!-- Section 2: Skills -->
+         <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente eveniet deserunt expedita debitis consequuntur modi iusto earum molestias quas.
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="images/python-original.svg" alt="Python">
+                    <span>Python</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/pytorch-original.svg" alt="PyTorch">
+                    <span>PyTorch</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/scikitlearn-original.svg" alt="Scikitlearn">
+                    <span>SciKit-Learn</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/pandas-original.svg" alt="Pandas">
+                    <span>Pandas</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/matplotlib-original.svg" alt="Matplotlib">
+                    <span>MatPlotLib</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/postgresql-original.svg" alt="PostgreSQL">
+                    <span>PostgreSQL</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/excel.png" alt="Excel">
+                    <span>Excel</span>
+                </div>
+
+                <div class="cell">
+                    <img src="images/tableau-software.svg" alt="Tableau">
+                    <span>Tableau</span>
+                </div>
+            </div>
+         </section>
+
+        <!-- Section 3: Work Experience -->
+         <section id="experience">
+            <h2>Experiences</h2>
+                <div class="experience-card">
+                    <!-- Left side (dates & location) -->
+                    <div class="experience-left">
+                    <p class="date">April 2022 – August 2025</p>
+                    <p class="location">Unionville, ON, CAN</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!-- Right side (company, role, tag) -->
+                    <div class="experience-right">
+                    <h3 class="company">Unionville Tennis Club</h3>
+                    <p class="role">Tennis Instructor</p>
+                    </div>
+
+                    <!-- Company Logo -->
+                    <div class="experience-logo">
+                    <img src="images/utc.png" alt="UTC">
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-left">
+                    <p class="date">September 2021 - August 2025</p>
+                    <p class="location">Markham, ON, CAN</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="experience-right">
+                    <h3 class="company">Self-Employed</h3>
+                    <p class="role">Tennis Racquet Stringer</p>
+                    </div>
+
+                    <div class="experience-logo">
+                    <img src="images/racquetv2.webp" alt="racquet">
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-left">
+                    <p class="date">October 2024 – April 2025</p>
+                    <p class="location">Markham, ON, CAN</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="experience-right">
+                    <h3 class="company">Premier Racquet Clubs Markham</h3>
+                    <p class="role">Tennis Instructor</p>
+                    </div>
+
+                    <div class="experience-logo">
+                    <img src="images/prc.png" alt="PRC">
+                    </div>
+                </div>
+         </section>
+
+         <!-- Section 3.5: Extracurriculars -->
+         <section id="extracurriculars">
+            <h2>Extracurricular Activities</h2>
+                <div class="experience-card">
+                    <div class="experience-left">
+                    <p class="date">July 2022 – August 2025</p>
+                    <p class="location">Toronto, ON, CAN</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="experience-right">
+                    <h3 class="company">University of Toronto Track Club</h3>
+                    <p class="role">Distance Running</p>
+                    <ul class="details">
+                        <li>7,787.22 km Run Since October 2021</li>
+                        <li>1:22:16 Toronto Half Marathon</li>
+                        <li>4x OFSAA XC/Track Qualifier</li>
+                    </ul>
+                    </div>
+
+                    <div class="experience-logo">
+                    <img src="images/Torontotrack.jpg" alt="UTTC">
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-left">
+                    <p class="date">March 2018 – June 2022</p>
+                    <p class="location">Unionville, ON, CAN</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="experience-right">
+                    <h3 class="company">Tennis Canada</h3>
+                    <p class="role">Tennis Athlete</p>
+                    <ul class="details">
+                        <li>Career Peek Ranked 48th in Canadian Singles, 25th in Canadian Doubles</li>
+                    </ul>
+                    </div>
+
+                    <div class="experience-logo">
+                    <img src="images/tenniscanada.jpg" alt="Tennis">
+                    </div>
+                </div>
+
+                
+         </section>
+
+        <!-- Section 4: Contact -->
+         <section id="contact"></section>
+    </main>
+</body>
+</html>
