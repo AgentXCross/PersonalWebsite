@@ -282,7 +282,7 @@ nav .right a:last-child{
 @media (max-width: 850px) {
     /* Section 1 */
     .hero-section .text h2{
-        font-size: 40px;
+        font-size: 47px;
     }
 }
 
@@ -323,9 +323,6 @@ nav .right a:last-child{
     /* Section 1 */
     .hero-section {
         padding: 0 20px;
-    }
-    .hero-section .text h2 {
-        font-size: 30px;
     }
     /* Section 2 */
     .skills-section {
