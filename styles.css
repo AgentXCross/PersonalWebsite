@@ -163,13 +163,13 @@ nav .right a:last-child{
   font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
-  font-family: 'Lobster';
+  font-family: 'Lobster', cursive;
 }
 #extracurriculars h2 {
   font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
-  font-family: 'Lobster';
+  font-family: 'Lobster', cursive;
 }
 .experience-left {
     flex: 1;
@@ -230,7 +230,7 @@ nav .right a:last-child{
 }
 .contact-section h2 {
     font-size: 45px;
-    font-family: 'Lobster';
+    font-family: 'Lobster', cursive;
 }
 .contact-section .group {
     display: flex;
@@ -247,7 +247,7 @@ nav .right a:last-child{
 }
 .contact-section .group form input,
 .contact-section .group form textarea {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     border: 2px solid var(--link-color);
     background-color: transparent;
     color: var(--text-color);
