@@ -1,6 +1,6 @@
 :root {
     --text-color: #eaeaea;
-    --link-color: #64afff;
+    --link-color: #4fd6ff;
     --background-color: #101113;
 }
 
@@ -74,7 +74,7 @@ nav .right a:last-child{
 }
 
 .hero-section .text h2 {
-    font-size: 120px;
+    font-size: 140px;
     font-family: 'Lobster';
 }
 
@@ -115,7 +115,8 @@ nav .right a:last-child{
 }
 .skills-section h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
+    font-family: 'Lobster';
 }
 .skills-section .text {
     text-align: center;
@@ -159,14 +160,16 @@ nav .right a:last-child{
     margin-bottom: 30px;
 }
 #experience h2 {
-  font-size: 35px;          
+  font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
+  font-family: 'Lobster';
 }
 #extracurriculars h2 {
-  font-size: 35px;          
+  font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
+  font-family: 'Lobster';
 }
 .experience-left {
     flex: 1;
@@ -226,7 +229,8 @@ nav .right a:last-child{
     margin-bottom: 100px;
 }
 .contact-section h2 {
-    font-size: 35px;
+    font-size: 45px;
+    font-family: 'Lobster';
 }
 .contact-section .group {
     display: flex;
@@ -263,9 +267,24 @@ nav .right a:last-child{
 .contact-section .group form button:hover {
     filter: brightness(.9);
 }
+@media (max-width: 1335px) {
+    .hero-section .text h2{
+        font-size: 120px;
+    }
+}
 @media (max-width: 1200px) {
     .hero-section .text h2{
-        font-size: 95px;
+        font-size: 110px;
+    }
+}
+@media (max-width: 1140px) {
+    .hero-section .text h2{
+        font-size: 100px;
+    }
+}
+@media (max-width: 1090px) {
+    .hero-section .text h2{
+        font-size: 90px;
     }
 }
 @media (max-width: 1050px) {
@@ -276,22 +295,46 @@ nav .right a:last-child{
 
 @media (max-width: 930px) {
     .hero-section .text h2{
-        font-size: 55px;
+        font-size: 80px;
+    }
+    .hero-section .headshot img {
+        max-width: 280px;
+    }
+}
+@media (max-width: 885px) {
+    .hero-section .text h2{
+        font-size: 70px;
+    }
+    .hero-section .headshot img {
+        max-width: 260px;
     }
 }
 @media (max-width: 850px) {
     /* Section 1 */
     .hero-section .text h2{
-        font-size: 47px;
+        font-size: 70px;
+    }
+    .hero-section .headshot img {
+        max-width: 220px;
+    }
+}
+@media (max-width: 790px) {
+    .hero-section .text h2{
+        font-size: 65px;
     }
 }
 
+
+/* VERTICAL AFTER THIS POINT */
 @media (max-width: 740px) {
+    .hero-section .headshot img {
+        max-width: 280px;
+    }
     .hero-section {
         flex-direction: column-reverse;
     }
     .hero-section .text h2{
-        font-size: 50px;
+        font-size: 75px;
     }
     .hero-section .headshot img{
         width: 300px
@@ -341,9 +384,15 @@ nav .right a:last-child{
     .experience-card {
         padding: 0 20px; /* reduce padding on mobile */
     }
+    #experience h2,
+    #extracurriculars h2,
+    #contact h2 {
+        text-align: center;
+        padding: 0; /* remove side padding */
     /* Section 4 */
     .contact-section{
         padding: 0 20px;
+    }
     }
 }
 
