@@ -335,6 +335,9 @@ nav .right a:last-child{
     .experience-left {
         display: none; /* hide dates & location */
     }
+    .experience-card .divider {
+        display: none;
+    }
     .experience-card {
         padding: 0 20px; /* reduce padding on mobile */
     }
