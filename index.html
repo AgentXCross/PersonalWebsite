@@ -14,6 +14,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="images/icon.ico">
 
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel = "stylesheet" href = "styles.css"> 
 
     <title>Michael's Personal Website</title>
@@ -46,7 +47,7 @@
     <main>
         <!-- Section 1: Introduction and Headshot -->
          <section class="hero-section">
-            <div class="text">
+            <div class="text" data-aos="fade-left">
                 <h2 class="hero-title">Hi, I'm Michael</h2>
                 <p>I’m a Mathematics student @ the University of Waterloo with a passion for data science, finance, and AI/ML. 
                 Recently, I've been exploring classical machine learning with Scikit-Learn and learning PyTorch for deep learning. 
@@ -74,55 +75,55 @@
                     </a>
                 </div>
             </div>
-            <div class="headshot">
+            <div class="headshot" data-aos="fade-right">
                 <img src="images/headshot.webp" alt="michael headshot">
             </div>
          </section>
 
         <!-- Section 2: Skills -->
-         <section id="skills" class="skills-section">
+         <section id="skills" class="skills-section" data-aos="fade-up">
             <h2>Technical Skills</h2>
             <div class="text">
                 
             </div>
 
             <div class="cells">
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/python-original.svg" alt="Python">
                     <span>Python</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/pytorch-original.svg" alt="PyTorch">
                     <span>PyTorch</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/scikitlearn-original.svg" alt="Scikitlearn">
                     <span>SciKit-Learn</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/pandas-original.svg" alt="Pandas">
                     <span>Pandas</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/matplotlib-original.svg" alt="Matplotlib">
                     <span>MatPlotLib</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/postgresql-original.svg" alt="PostgreSQL">
                     <span>PostgreSQL</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/excel.png" alt="Excel">
                     <span>Excel</span>
                 </div>
 
-                <div class="cell">
+                <div class="cell" data-aos="zoom-in">
                     <img src="images/tableau-software.svg" alt="Tableau">
                     <span>Tableau</span>
                 </div>
@@ -130,7 +131,7 @@
          </section>
 
         <!-- Section 3: Work Experience -->
-         <section id="experience">
+         <section id="experience" data-aos="fade-up">
             <h2>Work Experiences</h2>
                 <div class="experience-card">
                     <!-- Left side (dates & location) -->
@@ -188,7 +189,7 @@
          </section>
 
          <!-- Section 3.5: Extracurriculars -->
-         <section id="extracurriculars">
+         <section id="extracurriculars" data-aos="fade-up">
             <h2>Extracurricular Activities</h2>
                 <div class="experience-card">
                     <div class="experience-left">
@@ -259,5 +260,12 @@
             </div>
          </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1700,   // 1 second fade
+        once: true        // animate only once
+      });
+    </script>
 </body>
 </html>
