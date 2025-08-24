@@ -1,6 +1,6 @@
 :root {
     --text-color: #eaeaea;
-    --link-color: #4fd6ff;
+    --link-color: #fd72d1;
     --background-color: #101113;
 }
 
@@ -27,17 +27,21 @@ a {
     text-decoration: none;
 }
 
-h2 {
-  font-family: 'Lobster', cursive;
-}
-
 /* NAVBAR */
+
 nav {
+    position: fixed;             /* make it stick */
+    top: 0;                      /* stick to very top */
+    left: 0;
+    width: 100%;                 /* full width */
+    z-index: 1000;               /* keep above other elements */
+
+    background: linear-gradient(180deg, #0d82e8, #020c34);
+    padding: 0 50px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px; 
-    height: 80px;
 }
 
 nav .left a{
@@ -67,7 +71,7 @@ nav .right a:last-child{
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
-    margin: 50px 0;
+    margin: 100px 0;
     align-items: center;
     margin-bottom: 100px;
     gap: 40px;
@@ -77,13 +81,55 @@ nav .right a:last-child{
     flex: 5;
 }
 
+/* 
 .hero-section .text h2 {
     font-size: 140px;
-    font-family: 'Lobster';
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(90deg, #e7ff0d, #EF60AD, #DF1AA0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent;
+}
+*/
+.hero-section .text h2 {
+    font-size: 140px;
+    font-family: 'Lobster', cursive;
+    background: linear-gradient(270deg, #e7ff0d, #e86cae, #ff37c0);
+    background-size: 600% 600%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    animation: gradientMove 8s ease infinite, popIn 1s ease-out forwards;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes popIn {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.05); 
+    }
+    60% { 
+        opacity: 1; 
+        transform: scale(1.1);  /* jump bigger */
+    }
+    100% { 
+        transform: scale(1);    /* settle back */
+    }
 }
 
 .hero-section .text .links {
     margin-top: 25px;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
 }
 
 .hero-section .text .links a {
@@ -93,12 +139,12 @@ nav .right a:last-child{
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
-    transition: .2s;
+    transition: 0.3s;
 }
 
 .hero-section .text .links a:hover{
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
+    color: #faff00;
+    border: 2px solid #faff00;
 }
 
 .hero-section .headshot {
@@ -107,9 +153,21 @@ nav .right a:last-child{
     justify-content: right;
 }
 
-.hero-section .headshot img{
+.hero-section .headshot img {
     border-radius: 50%;
     width: 350px;
+    border: 3px solid #faff00;
+    animation: neonPulse 3s infinite alternate ease-in-out, scalePulse 6s infinite alternate ease-in-out;
+    box-shadow: 0 0 15px #faff00, 0 0 30px #faff00, 0 0 45px #faff00;
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 10px #faff00, 0 0 20px #faff00, 0 0 30px #faff00;
+    }
+    100% {
+        box-shadow: 0 0 25px #faff00, 0 0 50px #faff00, 0 0 75px #faff00;
+    }
 }
 
 /* Section 2 */
@@ -120,7 +178,16 @@ nav .right a:last-child{
 .skills-section h2 {
     text-align: center;
     font-size: 45px;
-    font-family: 'Lobster';
+    font-family: 'Lobster', cursive;
+}
+.skills-section h2::after {
+    content: "";
+    display: block;
+    width: 275px; /* adjust length of line */
+    height: 4px;
+    margin: 12px auto 0; /* always center */
+    background: linear-gradient(90deg, #fd72d1, #faff00);
+    border-radius: 2px;
 }
 .skills-section .text {
     text-align: center;
@@ -131,6 +198,7 @@ nav .right a:last-child{
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .skills-section .cells .cell{
     display: flex;
     justify-content: center;
@@ -142,7 +210,14 @@ nav .right a:last-child{
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
     background-color: var(--text-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
+.skills-section .cells .cell:hover {
+    transform: translateY(-5px);
+    border-color: #faff00; /* neon yellow */
+    box-shadow: 0 0 12px #faff00, 0 0 24px #faff00, 0 0 36px #faff00;
+}
+
 .skills-section .cells .cell img {
     width: 30px;
     height: 30px;
@@ -163,17 +238,36 @@ nav .right a:last-child{
     border-radius: 10px;
     margin-bottom: 30px;
 }
+
 #experience h2 {
   font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
   font-family: 'Lobster', cursive;
 }
+#experience h2::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 4px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #fd72d1, #faff00);
+    border-radius: 2px;
+}
 #extracurriculars h2 {
   font-size: 45px;          
   margin-bottom: 40px;  
   padding: 0 50px;
   font-family: 'Lobster', cursive;
+}
+#extracurriculars h2::after {
+    content: "";
+    display: block;
+    width: 435px;
+    height: 4px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #fd72d1, #faff00);
+    border-radius: 2px;
 }
 .experience-left {
     flex: 1;
@@ -235,6 +329,15 @@ nav .right a:last-child{
 .contact-section h2 {
     font-size: 45px;
     font-family: 'Lobster', cursive;
+}
+.contact-section h2::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    margin-top: 10px; /* left-aligned under title */
+    background: linear-gradient(90deg, #fd72d1, #faff00);
+    border-radius: 2px;
 }
 .contact-section .group {
     display: flex;
@@ -336,12 +439,19 @@ nav .right a:last-child{
     }
     .hero-section {
         flex-direction: column-reverse;
+        text-align: center;   /* center all text */
+    }
+    .hero-section .text {
+        flex: unset;          
+        width: 100%;        
+        padding: 0;       
     }
     .hero-section .text h2{
         font-size: 75px;
     }
     .hero-section .headshot img{
-        width: 300px
+        width: 300px;
+        margin: 0 auto;
     }
     .experience-right .details {
         display: none;
@@ -394,9 +504,18 @@ nav .right a:last-child{
         text-align: center;
         padding: 0; /* remove side padding */
     /* Section 4 */
-    .contact-section{
+    .contact-section {
         padding: 0 20px;
     }
+    }
+    #extracurriculars h2::after {
+        margin: 10px auto 0; /* auto left/right = centered */
+    }
+    #experience h2::after {
+        margin: 10px auto 0; 
+    }
+    .contact-section h2::after {
+        margin: 10px auto 0;
     }
 }
 
