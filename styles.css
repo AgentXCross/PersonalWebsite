@@ -1,6 +1,6 @@
 :root {
-    --text-color: #eaeaea;
-    --link-color: #fd72d1;
+    --text-color: #efefef;
+    --link-color: #00f2ff;
     --background-color: #101113;
 }
 
@@ -36,7 +36,7 @@ nav {
     width: 100%;                 /* full width */
     z-index: 1000;               /* keep above other elements */
 
-    background: linear-gradient(180deg, #0d82e8, #020c34);
+    background: linear-gradient(180deg, #0f83ff, #02081d);
     padding: 0 50px;
     height: 50px;
     display: flex;
@@ -95,7 +95,7 @@ nav .right a:last-child{
 .hero-section .text h2 {
     font-size: 140px;
     font-family: 'Lobster', cursive;
-    background: linear-gradient(270deg, #e7ff0d, #e86cae, #ff37c0);
+    background: linear-gradient(270deg, #ff21cb, #fbff1b);
     background-size: 600% 600%;
 
     -webkit-background-clip: text;
@@ -228,7 +228,7 @@ nav .right a:last-child{
     color: var(--background-color)
 }
 
-/* Section 3: Experiences and Section 3.5: Extracurriculars*/
+/* Section 3: Experiences and Section 3.5: Extracurriculars and Education Section*/
 .experience-card {
     display: flex;
     align-items: center;
@@ -269,6 +269,9 @@ nav .right a:last-child{
     background: linear-gradient(90deg, #fd72d1, #faff00);
     border-radius: 2px;
 }
+#extracurriculars h2.education::after {
+    width: 175px;
+}
 .experience-left {
     flex: 1;
     font-size: 14px;
@@ -297,6 +300,7 @@ nav .right a:last-child{
 .experience-logo img {
     width: 80px;
     border-radius: 8px;
+    margin-left: 80px;
 }
 .divider {
   width: 1px;
@@ -307,7 +311,6 @@ nav .right a:last-child{
 #experience {
   margin-bottom: 100px; 
 }
-
 #extracurriculars {
   margin-bottom: 100px; 
 }
