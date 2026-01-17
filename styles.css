@@ -143,11 +143,11 @@ nav .right a:last-child {
 .hero-section .headshot img {
     width: 350px;
     border-radius: 50%;
-    border: 3px solid #faff00;
+    border: 3px solid #00ff22;
 
-    box-shadow: 0 0 15px #faff00,
-                0 0 30px #faff00,
-                0 0 45px #faff00;
+    box-shadow: 0 0 15px #00ff22,
+                0 0 30px #00ff22,
+                0 0 45px #00ff22;
 
     animation: neonPulse 3s infinite alternate ease-in-out;
 }
@@ -172,14 +172,14 @@ nav .right a:last-child {
 
 @keyframes neonPulse {
     from {
-        box-shadow: 0 0 10px #faff00,
-                    0 0 20px #faff00,
-                    0 0 30px #faff00;
+        box-shadow: 0 0 20px #00ff22,
+                    0 0 30px #00ff22,
+                    0 0 40px #00ff22;
     }
     to {
-        box-shadow: 0 0 25px #faff00,
-                    0 0 50px #faff00,
-                    0 0 75px #faff00;
+        box-shadow: 0 0 100px #00ff22,
+                    0 0 135px #00ff22,
+                    0 0 175px #00ff22,
     }
 }
 
