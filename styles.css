@@ -1,9 +1,15 @@
+/* ========================
+   Global Variables
+   ======================== */
 :root {
     --text-color: #efefef;
-    --link-color: #00f2ff;
+    --link-color: #ff5fda;
     --background-color: #101113;
 }
 
+/* ========================
+   Reset / Base
+   ======================== */
 * {
     margin: 0;
     padding: 0;
@@ -27,105 +33,84 @@ a {
     text-decoration: none;
 }
 
-/* NAVBAR */
 
+/* ========================
+   Navbar
+   ======================== */
 nav {
-    position: fixed;             /* make it stick */
-    top: 0;                      /* stick to very top */
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;                 /* full width */
-    z-index: 1000;               /* keep above other elements */
-
-    background: linear-gradient(180deg, #0f83ff, #02081d);
-    padding: 0 50px;
+    width: 100%;
     height: 50px;
+    z-index: 1000;
+
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background: linear-gradient(180deg, #0f83ff, #02081d);
 }
 
-nav .left a{
+/* Left: name */
+nav .left a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
 }
 
-nav .right a{
+/* Right: links */
+nav .right a {
     color: var(--text-color);
     margin: 0 10px;
 }
 
-nav .right a span{
+nav .right a span {
     margin-left: 5px;
 }
 
-nav .right a:last-child{
+/* Resume button */
+nav .right a:last-child {
     color: var(--background-color);
     background-color: var(--text-color);
     padding: 5px 15px;
     border-radius: 5px;
 }
 
-/*Section 1: Introduction and Headshot*/
+/* ========================
+   Section 1: Hero
+   ======================== */
 .hero-section {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 40px;
+
     padding: 0 50px;
     margin: 100px 0;
-    align-items: center;
-    margin-bottom: 100px;
-    gap: 40px;
 }
 
+/* Left text block */
 .hero-section .text {
     flex: 5;
 }
 
-/* 
-.hero-section .text h2 {
+/* Main heading */
+.hero-title {
     font-size: 140px;
     font-family: 'Lobster', cursive;
-    background: linear-gradient(90deg, #e7ff0d, #EF60AD, #DF1AA0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; 
-    color: transparent;
-}
-*/
-.hero-section .text h2 {
-    font-size: 140px;
-    font-family: 'Lobster', cursive;
+
     background: linear-gradient(270deg, #ff21cb, #fbff1b);
     background-size: 600% 600%;
-
     -webkit-background-clip: text;
     background-clip: text;
-
-    -webkit-text-fill-color: transparent;
     color: transparent;
 
     animation: gradientMove 8s ease infinite, popIn 1s ease-out forwards;
 }
 
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-@keyframes popIn {
-    0% { 
-        opacity: 0; 
-        transform: scale(0.05); 
-    }
-    60% { 
-        opacity: 1; 
-        transform: scale(1.1);  /* jump bigger */
-    }
-    100% { 
-        transform: scale(1);    /* settle back */
-    }
-}
-
+/* CTA links */
 .hero-section .text .links {
     margin-top: 25px;
     font-family: 'Lobster', cursive;
@@ -135,116 +120,161 @@ nav .right a:last-child{
 .hero-section .text .links a {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid var(--link-color);
-    border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
+
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
     transition: 0.3s;
 }
 
-.hero-section .text .links a:hover{
+.hero-section .text .links a:hover {
     color: #faff00;
-    border: 2px solid #faff00;
+    border-color: #faff00;
 }
 
+/* Right image */
 .hero-section .headshot {
     flex: 2;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .hero-section .headshot img {
-    border-radius: 50%;
     width: 350px;
+    border-radius: 50%;
     border: 3px solid #faff00;
-    animation: neonPulse 3s infinite alternate ease-in-out, scalePulse 6s infinite alternate ease-in-out;
-    box-shadow: 0 0 15px #faff00, 0 0 30px #faff00, 0 0 45px #faff00;
+
+    box-shadow: 0 0 15px #faff00,
+                0 0 30px #faff00,
+                0 0 45px #faff00;
+
+    animation: neonPulse 3s infinite alternate ease-in-out;
+}
+
+.hero-section .text p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes gradientMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes popIn {
+    0%   { opacity: 0; transform: scale(0.05); }
+    60%  { opacity: 1; transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 @keyframes neonPulse {
-    0% {
-        box-shadow: 0 0 10px #faff00, 0 0 20px #faff00, 0 0 30px #faff00;
+    from {
+        box-shadow: 0 0 10px #faff00,
+                    0 0 20px #faff00,
+                    0 0 30px #faff00;
     }
-    100% {
-        box-shadow: 0 0 25px #faff00, 0 0 50px #faff00, 0 0 75px #faff00;
+    to {
+        box-shadow: 0 0 25px #faff00,
+                    0 0 50px #faff00,
+                    0 0 75px #faff00;
     }
 }
 
-/* Section 2 */
+/* ========================
+   Section 2: Skills
+   ======================== */
 .skills-section {
     padding: 0 50px;
     margin-bottom: 100px;
 }
+
+/* Section title */
 .skills-section h2 {
     text-align: center;
     font-size: 45px;
     font-family: 'Lobster', cursive;
 }
+
 .skills-section h2::after {
     content: "";
     display: block;
-    width: 275px; /* adjust length of line */
+    width: 275px;
     height: 4px;
-    margin: 12px auto 0; /* always center */
+    margin: 12px auto 0;
     background: linear-gradient(90deg, #fd72d1, #faff00);
     border-radius: 2px;
 }
+
+/* Optional intro text */
 .skills-section .text {
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* Skill grid */
 .skills-section .cells {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.skills-section .cells .cell{
+/* Individual skill card */
+.skills-section .cells .cell {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
+
     width: 200px;
     padding: 10px 20px;
     margin: 10px;
+
+    background-color: var(--text-color);
     border: 1.5px solid #d3d3d3;
     border-radius: 5px;
-    background-color: var(--text-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-}
-.skills-section .cells .cell:hover {
-    transform: translateY(-5px);
-    border-color: #faff00; /* neon yellow */
-    box-shadow: 0 0 12px #faff00, 0 0 24px #faff00, 0 0 36px #faff00;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
 }
 
+.skills-section .cells .cell:hover {
+    transform: translateY(-5px);
+    border-color: #faff00;
+    box-shadow: 0 0 12px #faff00,
+                0 0 24px #faff00,
+                0 0 36px #faff00;
+}
+
+/* Icon + label */
 .skills-section .cells .cell img {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
+
 .skills-section .cells .cell span {
     font-size: 18px;
-    color: var(--background-color)
+    color: var(--background-color);
 }
 
-/* Section 3: Experiences and Section 3.5: Extracurriculars and Education Section*/
-.experience-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--background-color);
-    padding: 0 50px;
-    border-radius: 10px;
-    margin-bottom: 30px;
+/* ========================
+   Section 3: Work Experience
+   ======================== */
+#experience {
+    margin-bottom: 100px;
 }
 
+/* Section title */
 #experience h2 {
-  font-size: 45px;          
-  margin-bottom: 40px;  
-  padding: 0 50px;
-  font-family: 'Lobster', cursive;
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding: 0 50px;
+    font-family: 'Lobster', cursive;
 }
+
 #experience h2::after {
     content: "";
     display: block;
@@ -254,13 +284,121 @@ nav .right a:last-child{
     background: linear-gradient(90deg, #fd72d1, #faff00);
     border-radius: 2px;
 }
-#extracurriculars h2 {
-  font-size: 45px;          
-  margin-bottom: 40px;  
-  padding: 0 50px;
-  font-family: 'Lobster', cursive;
+
+/* Experience card layout */
+.experience-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+    margin-bottom: 30px;
+
+    background: var(--background-color);
+    border-radius: 10px;
 }
-#extracurriculars h2::after {
+
+/* Left column (date + location) */
+.experience-left {
+    flex: 1;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.experience-left .date,
+.experience-left .location {
+    font-size: 18px;
+    color: #fff;
+}
+
+.experience-left .date {
+    font-weight: bold;
+}
+
+/* Divider */
+.divider {
+    width: 1px;
+    margin: 0 30px;
+    align-self: stretch;
+    background: #8a8a8a;
+}
+
+/* Right column (role info) */
+.experience-right {
+    flex: 2;
+}
+
+.experience-right .company {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.experience-right .role {
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* Optional bullet details */
+.experience-right .details {
+    margin-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.experience-right .details li {
+    margin-bottom: 6px;
+}
+
+/* Company logo */
+.experience-logo img {
+    width: 80px;
+    margin-left: 80px;
+    border-radius: 8px;
+}
+
+/* ========================
+   Section 4: Education
+   ======================== */
+#education {
+    margin-bottom: 100px;
+}
+
+/* Section title */
+#education h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding: 0 50px;
+    font-family: 'Lobster', cursive;
+}
+
+#education h2::after {
+    content: "";
+    display: block;
+    width: 175px;
+    height: 4px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #fd72d1, #faff00);
+    border-radius: 2px;
+}
+
+/* ========================
+   Section 5: Extracurriculars
+   ======================== */
+#ecs {
+    margin-bottom: 100px;
+}
+
+/* Section title */
+#ecs h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding: 0 50px;
+    font-family: 'Lobster', cursive;
+}
+
+#ecs h2::after {
     content: "";
     display: block;
     width: 435px;
@@ -269,259 +407,244 @@ nav .right a:last-child{
     background: linear-gradient(90deg, #fd72d1, #faff00);
     border-radius: 2px;
 }
-#extracurriculars h2.education::after {
-    width: 175px;
-}
-.experience-left {
-    flex: 1;
-    font-size: 14px;
-    color: #bbb;
-}
-.experience-left .date {
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-}
-.experience-left .location {
-    font-size: 18px;
-    color: #fff;
-}
-.experience-right {
-    flex: 2;
-}
-.experience-right .company {
-    font-size: 20px;
-    font-weight: bold;
-}
-.experience-right .role {
-    font-size: 16px;
-    color: #aaa;
-}
-.experience-logo img {
-    width: 80px;
-    border-radius: 8px;
-    margin-left: 80px;
-}
-.divider {
-  width: 1px;
-  background: #8a8a8a;  
-  margin: 0 30px;
-  align-self: stretch; 
-}
-#experience {
-  margin-bottom: 100px; 
-}
-#extracurriculars {
-  margin-bottom: 100px; 
-}
-.experience-right .details {
-  margin-top: 10px;
-  padding-left: 20px;  /* indent bullets */
-  color: #ccc;
-  font-size: 15px;
-  line-height: 1.6;
-}
-.experience-right .details li {
-  margin-bottom: 6px;
-}
-/* Section 4 */
-.contact-section {
+
+/* ========================
+   Section 6: Contact
+   ======================== */
+#contact {
     padding: 0 50px;
     margin-bottom: 100px;
 }
-.contact-section h2 {
+
+/* Section title */
+#contact h2 {
     font-size: 45px;
     font-family: 'Lobster', cursive;
 }
-.contact-section h2::after {
+
+#contact h2::after {
     content: "";
     display: block;
     width: 130px;
     height: 4px;
-    margin-top: 10px; /* left-aligned under title */
+    margin-top: 10px;
     background: linear-gradient(90deg, #fd72d1, #faff00);
     border-radius: 2px;
 }
-.contact-section .group {
+
+/* Layout */
+#contact .group {
     display: flex;
     gap: 50px;
 }
-.contact-section .group .text {
+
+/* Left text */
+#contact .group .text {
     flex: 3;
     margin-top: 20px;
 }
-.contact-section .group form {
+
+/* Form */
+#contact .group form {
     flex: 3;
     display: flex;
     flex-direction: column;
 }
-.contact-section .group form input,
-.contact-section .group form textarea {
+
+#contact .group form input,
+#contact .group form textarea {
     font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--link-color);
-    background-color: transparent;
-    color: var(--text-color);
     padding: 10px;
     margin-bottom: 15px;
+
+    color: var(--text-color);
+    background-color: transparent;
+    border: 2px solid var(--link-color);
     outline: none;
     resize: none;
 }
-.contact-section .group form button {
+
+#contact .group form button {
+    height: 50px;
     font-size: 16px;
     font-family: 'Poppins';
+
     background-color: var(--link-color);
     border: none;
-    height: 50px;
     cursor: pointer;
 }
-.contact-section .group form button:hover {
+
+#contact .group form button:hover {
     filter: brightness(.9);
 }
-@media (max-width: 1335px) {
-    .hero-section .text h2{
-        font-size: 120px;
-    }
-}
+
+/* ========================
+   Responsive layout
+   ======================== */
+
+/* Large tablets / small laptops */
 @media (max-width: 1200px) {
-    .hero-section .text h2{
+    .hero-section .text h2 {
         font-size: 110px;
     }
 }
-@media (max-width: 1140px) {
-    .hero-section .text h2{
-        font-size: 100px;
-    }
-}
-@media (max-width: 1090px) {
-    .hero-section .text h2{
+
+/* Tablets */
+@media (max-width: 992px) {
+    .hero-section .text h2 {
         font-size: 90px;
     }
+
+    .hero-section .headshot img {
+        width: 280px;
+    }
 }
+
+/* Small tablets */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-section .text {
+        width: 100%;
+    }
+
+    .hero-section .text h2 {
+        font-size: 75px;
+    }
+
+    .hero-section .headshot img {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .experience-right .details {
+        display: none;
+    }
+
+    #contact .group {
+        flex-direction: column;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    /* Navbar */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    nav .right a:last-child {
+        background-color: transparent;
+        color: var(--text-color);
+        padding: 0;
+    }
+
+    /* Section padding */
+    .hero-section,
+    .skills-section,
+    #experience,
+    #education,
+    #ecs,
+    #contact {
+        padding: 0 20px;
+    }
+
+    /* Experience cards */
+    .experience-left,
+    .divider {
+        display: none;
+    }
+
+    .experience-card {
+        padding: 0 20px;
+    }
+
+    /* Center section headers */
+    #experience h2,
+    #education h2,
+    #ecs h2,
+    #contact h2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    #experience h2::after,
+    #education h2::after,
+    #ecs h2::after,
+    #contact h2::after {
+        margin: 10px auto 0;
+    }
+
+    /* Skill labels */
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
+}
+
+/* ========================
+Hero title fine scaling
+(ONLY for "Hi, I'm Michael")
+======================== */
+@media (max-width: 1335px) {
+    .hero-title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 112px;
+    }
+}
+
+@media (max-width: 1162px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .hero-title {
+        font-size: 37px;
+    }
+}
+
 @media (max-width: 1050px) {
-    .hero-section .text h2{
+    .hero-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 950px) {
+    .hero-title {
         font-size: 75px;
     }
 }
 
 @media (max-width: 930px) {
-    .hero-section .text h2{
-        font-size: 80px;
-    }
-    .hero-section .headshot img {
-        max-width: 280px;
-    }
-}
-@media (max-width: 885px) {
-    .hero-section .text h2{
+    .hero-title {
         font-size: 70px;
     }
-    .hero-section .headshot img {
-        max-width: 260px;
-    }
 }
-@media (max-width: 850px) {
-    /* Section 1 */
-    .hero-section .text h2{
-        font-size: 70px;
-    }
-    .hero-section .headshot img {
-        max-width: 220px;
-    }
-}
+
 @media (max-width: 790px) {
-    .hero-section .text h2{
+    .hero-title {
         font-size: 65px;
     }
 }
 
-
-/* VERTICAL AFTER THIS POINT */
-@media (max-width: 740px) {
+@media (max-width: 1200px) {
     .hero-section .headshot img {
-        max-width: 280px;
-    }
-    .hero-section {
-        flex-direction: column-reverse;
-        text-align: center;   /* center all text */
-    }
-    .hero-section .text {
-        flex: unset;          
-        width: 100%;        
-        padding: 0;       
-    }
-    .hero-section .text h2{
-        font-size: 75px;
-    }
-    .hero-section .headshot img{
         width: 300px;
-        margin: 0 auto;
-    }
-    .experience-right .details {
-        display: none;
-    }
-    .contact-section .group {
-        flex-direction: column;
     }
 }
-
-@media (max-width: 600px) {
-    /* NAVBAR */
-    nav{
-        padding: 0 20px;
-    }
-    nav .right a{
-        font-size: 22px;
-    }
-    nav .right a:last-child{
-        color: var(--text-color);
-        background-color: var(--background-color);
-        padding: 0;
-    }
-    nav .right a span{
-        display: none;
-    }
-    /* Section 1 */
-    .hero-section {
-        padding: 0 20px;
-    }
-    /* Section 2 */
-    .skills-section {
-        padding: 0 20px;
-    }
-    .skills-section .cells .cell span {
-        font-size: 16px;
-    }
-    /* Section 3: Experiences */
-    .experience-left {
-        display: none; /* hide dates & location */
-    }
-    .experience-card .divider {
-        display: none;
-    }
-    .experience-card {
-        padding: 0 20px; /* reduce padding on mobile */
-    }
-    #experience h2,
-    #extracurriculars h2,
-    #contact h2 {
-        text-align: center;
-        padding: 0; /* remove side padding */
-    /* Section 4 */
-    .contact-section {
-        padding: 0 20px;
-    }
-    }
-    #extracurriculars h2::after {
-        margin: 10px auto 0; /* auto left/right = centered */
-    }
-    #experience h2::after {
-        margin: 10px auto 0; 
-    }
-    .contact-section h2::after {
-        margin: 10px auto 0;
-    }
-}
-
 
 
 
