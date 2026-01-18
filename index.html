@@ -352,19 +352,37 @@
             <h2>Contact</h2>
             <div class="group">  
                 <div class="text">
-                    m529liu@uwaterloo.ca <br>
-                    Form currently doesn't work <br>
+                    m529liu@uwaterloo.ca <br> <br>
                 </div>
 
-                <form>
+                <form
+                    action="https://formspree.io/f/mykkeapb"
+                    method="POST"
+                    >
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
 
                     <label for="email">Email</label>
-                    <input type="text" id="email">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
 
                     <label for="message">Message</label>
-                    <textarea id="message" cols="30" rows="10"></textarea>
+                    <textarea
+                        id="message"
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        required
+                    ></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
