@@ -3,8 +3,8 @@
    ======================== */
 :root {
     --text-color: #efefef;
-    --link-color: #ff5fda;
-    --background-color: #101113;
+    --link-color: #e2ff04;
+    --background-color: #0e090e;
 }
 
 /* ========================
@@ -50,7 +50,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background: linear-gradient(180deg, #0f83ff, #02081d);
+    background: linear-gradient(
+        180deg,
+        #2347ff,
+        #0a0a0a
+    );
 }
 
 /* Left: name */
@@ -100,8 +104,12 @@ nav .right a:last-child {
 .hero-title {
     font-size: 140px;
     font-family: 'Lobster', cursive;
-
-    background: linear-gradient(270deg, #ff21cb, #fbff1b);
+    background: linear-gradient(
+    270deg,
+    #fff200,
+    #ffd400,
+    #ffea00
+    );
     background-size: 600% 600%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -129,8 +137,8 @@ nav .right a:last-child {
 }
 
 .hero-section .text .links a:hover {
-    color: #faff00;
-    border-color: #faff00;
+    color: #ff3ff2;
+    border-color: #ff3ff2;
 }
 
 /* Right image */
@@ -143,11 +151,11 @@ nav .right a:last-child {
 .hero-section .headshot img {
     width: 350px;
     border-radius: 50%;
-    border: 3px solid #00ff22;
+    border: 2px solid #ff00d0;
 
-    box-shadow: 0 0 15px #00ff22,
-                0 0 30px #00ff22,
-                0 0 45px #00ff22;
+    box-shadow: 0 0 15px #ff00d0,
+                0 0 30px #ff00d0,
+                0 0 45px #ff00d0;
 
     animation: neonPulse 3s infinite alternate ease-in-out;
 }
@@ -172,14 +180,14 @@ nav .right a:last-child {
 
 @keyframes neonPulse {
     from {
-        box-shadow: 0 0 20px #00ff22,
-                    0 0 30px #00ff22,
-                    0 0 40px #00ff22;
+        box-shadow: 0 0 10px #ff2bd6,
+                    0 0 20px #ff5fe2,
+                    0 0 30px #ff7cf0;
     }
     to {
-        box-shadow: 0 0 100px #00ff22,
-                    0 0 135px #00ff22,
-                    0 0 175px #00ff22,
+        box-shadow: 0 0 70px #ff2bd6,
+                    0 0 95px #ff6df5,
+                    0 0 120px #ff9cff;
     }
 }
 
