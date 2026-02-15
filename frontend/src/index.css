@@ -29,3 +29,149 @@ a, button {
   background-color: #FF1493;
   color: black;
 }
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 990px) {
+  #hero h1 {
+    font-size: 10rem !important;
+  }
+}
+
+@media (max-width: 880px) {
+  #hero h1 {
+    font-size: 8rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #hero h1 {
+    font-size: 6rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  #hero h1 {
+    font-size: 5rem !important;
+  }
+}
+
+@media (max-width: 440px) {
+  #hero h1 {
+    font-size: 4.2rem !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-name,
+  .nav-sections {
+    display: none !important;
+  }
+
+  nav {
+    justify-content: center !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 930px) {
+  section h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .skills-title {
+    top: -1.25rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  section:not(#hero) {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  section h2 {
+    margin-bottom: 3.2rem !important;
+  }
+}
+
+@media (max-width: 560px) {
+  section h2 {
+    font-size: 2.7rem !important;
+  }
+
+  .skills-title {
+    top: -0.85rem !important;
+  }
+}
+
+@media (max-width: 570px) {
+  section h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  section h3 {
+    font-size: 1.0rem !important;
+  }
+}
+
+@media (max-width: 850px) {
+  section, footer {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+  }
+}
+
+@media (max-width: 1090px) {
+  .about-img {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #projects .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .timeline-img,
+  .timeline-dot,
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-item {
+    display: block;
+  }
+
+  .timeline-card {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

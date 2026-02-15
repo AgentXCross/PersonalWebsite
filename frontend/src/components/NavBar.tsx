@@ -9,7 +9,7 @@ export default function NavBar() {
       >
         {/* Left - Name */}
         <span
-          className="text-black text-xl font-bold"
+          className="nav-name text-black text-xl font-bold"
           style={{ fontFamily: "'Klein Condensed', sans-serif" }}
         >
           MICHAEL L.
@@ -17,7 +17,7 @@ export default function NavBar() {
 
         {/* Center - Sections */}
         <div
-          className="hidden md:flex items-center gap-6"
+          className="nav-sections hidden md:flex items-center gap-6"
           style={{ fontFamily: "'Klein Condensed', sans-serif" }}
         >
           <a href="#experience" className="text-black font-bold text-base` hover:opacity-70 transition-opacity">
@@ -32,7 +32,7 @@ export default function NavBar() {
           <a href="#education" className="text-black font-bold text-base` hover:opacity-70 transition-opacity">
             EDUCATION
           </a>
-          <a href="#ecs" className="text-black font-bold text-base` hover:opacity-70 transition-opacity">
+          <a href="#extracurriculars" className="text-black font-bold text-base` hover:opacity-70 transition-opacity">
             ECS
           </a>
         </div>
