@@ -2,35 +2,33 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import SkillDock from "./components/SkillDock";
-import FirefliesBackground from "./components/FirefliesBackground";
-import FireworksBackground from "./components/FireworksBackground";
 import HexagonBackground from "./components/HexagonBackground";
-import NeonBackground from "./components/NeonBackground";
 import { CardContainer, CardBody, CardItem } from "./components/3DCard";
+import { Analytics } from "@vercel/analytics/react";
 
 /* Image Imports */
-import profileImg from "./assets/profile.png";
-import wingLeft from "./assets/wing_left.png";
-import wingRight from "./assets/wing_right.png";
-import bibsImg from "./assets/bibs.jpg";
-import sickKids from "./assets/sickkids.jpg";
+import profileImg from "./assets/profile.webp";
+import wingLeft from "./assets/wing_left.webp";
+import wingRight from "./assets/wing_right.webp";
+import bibsImg from "./assets/bibs.webp";
+import sickKids from "./assets/sickkids.png";
 import watai from "./assets/watai.png";
 import utc from "./assets/utc.png";
-import arxtract from "./assets/arxtract.png";
-import hydraNet from "./assets/HydraLA-Net.png";
-import sickKidsHospital from "./assets/sickkidshospital.jpg";
+import arxtract from "./assets/arxtract.webp";
+import hydraNet from "./assets/HydraLA-Net.webp";
+import sickKidsHospital from "./assets/sickkidshospital.webp";
 import wataiImage from "./assets/wataiimage.avif";
-import utcImage from "./assets/utcimage.jpg";
+import utcImage from "./assets/utcimage.webp";
 import waterlooSeal from "./assets/uwaterloo_seel.svg";
 import bcss from "./assets/bcss.png";
 import bcssImage from "./assets/bcssimage.avif";
 import waterlooimage from "./assets/waterlooimage.avif";
 import warriorHelm from "./assets/warrior_helm.png";
-import xcteam from "./assets/xcteam.jpg";
+import xcteam from "./assets/xcteam.webp";
 import torontoTrack from "./assets/uoft.png";
 import tennisCanada from "./assets/tenniscanada.svg";
-import uttcTeam from "./assets/uoftteam.jpg";
-import avivaCentre from "./assets/avivacentre.jpg";
+import uttcTeam from "./assets/uoftteam.webp";
+import avivaCentre from "./assets/avivacentre.webp";
 
 function App() {
   const fullText = "MICHAEL L.";
@@ -119,7 +117,6 @@ function App() {
 
       {/* About Me */}
       <section id="about" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
-        <FirefliesBackground count={40} speed={1} glowIntensity={1} />
         <CardContainer className="relative z-10 w-full" containerClassName="py-0 w-full">
           <CardBody className="w-full">
             <CardItem translateZ={20} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-8">
@@ -355,8 +352,7 @@ function App() {
 
       {/* Education */}
       <section id="education" className="fade-in-section relative flex flex-col items-start justify-start px-25 py-12 overflow-hidden">
-        {/* Background image — adjust opacity here */}
-        <img src={warriorHelm} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.25 }} />
+        <img src={waterlooSeal} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.09 }} />
         <h2
           className="relative z-10 text-white leading-none mb-16"
           style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
@@ -444,7 +440,7 @@ function App() {
 
       {/* Extracurriculars */}
       <section id="extracurriculars" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
-        <NeonBackground />
+        <img src={warriorHelm} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.21 }} />
         <h2
           className="relative z-10 text-white leading-none mb-16"
           style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
@@ -555,7 +551,6 @@ function App() {
 
       {/* Contact */}
       <section id="contact" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
-        <FireworksBackground />
         <h2
           className="relative z-10 text-white leading-none mb-8"
           style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
@@ -578,6 +573,9 @@ function App() {
           &middot; BUILT BY MICHAEL LIU &middot;
         </h2>
       </footer>
+
+      <Analytics />
+      
     </div>
   );
 }
