@@ -6,6 +6,7 @@
   src: url('./assets/klein/Klein-Condensed-ExtraBold-trial.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -48,6 +49,8 @@ a, button {
   opacity: 0;
   transform: translateY(45px);
   transition: opacity 1.3s ease-out, transform 1.3s ease-out;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
 }
 
 .fade-in-section.visible {

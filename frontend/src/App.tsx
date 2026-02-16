@@ -11,7 +11,7 @@ import profileImg from "./assets/profile.webp";
 import wingLeft from "./assets/wing_left.webp";
 import wingRight from "./assets/wing_right.webp";
 import bibsImg from "./assets/bibs.webp";
-import sickKids from "./assets/sickkids.png";
+import sickKids from "./assets/sickkids.webp";
 import watai from "./assets/watai.png";
 import utc from "./assets/utc.png";
 import arxtract from "./assets/arxtract.webp";
@@ -152,7 +152,7 @@ function App() {
                   </p>
                 </div>
                 <CardItem translateZ={30} className="flex-shrink-0 about-img">
-                  <img src={bibsImg} alt="" className="w-96 rounded-4xl object-cover" />
+                  <img src={bibsImg} alt="" className="w-96 rounded-4xl object-cover" loading="lazy" />
                 </CardItem>
               </div>
             </CardItem>
@@ -188,7 +188,7 @@ function App() {
                           <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>The Hospital for Sick Children</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={sickKids} alt="sick-kids" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={sickKids} alt="sick-kids" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Incoming Spring/Summer 2026</p>
@@ -202,14 +202,14 @@ function App() {
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
               <div className="timeline-img w-1/2 pl-12">
-                <img src={sickKidsHospital} alt="SickKids Hospital" className="w-full rounded-2xl object-cover h-48" />
+                <img src={sickKidsHospital} alt="SickKids Hospital" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
             </div>
 
             {/* Item 2 - Right */}
             <div className="timeline-item relative flex items-center">
               <div className="timeline-img w-1/2 pr-12">
-                <img src={wataiImage} alt="WAT.ai" className="w-full rounded-2xl object-cover h-48" />
+                <img src={wataiImage} alt="WAT.ai" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
@@ -219,7 +219,7 @@ function App() {
                     <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={watai} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={watai} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Machine Learning Engineer</h3>
@@ -248,7 +248,7 @@ function App() {
                           <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Unionville Tennis Club</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={utc} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={utc} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Apr 2022 - Aug 2025</p>
@@ -262,7 +262,7 @@ function App() {
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
               <div className="timeline-img w-1/2 pl-12">
-                <img src={utcImage} alt="Unionville Tennis Club" className="w-full rounded-2xl object-cover h-48" />
+                <img src={utcImage} alt="Unionville Tennis Club" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
             </div>
 
@@ -299,7 +299,7 @@ function App() {
             <CardBody className="w-full">
               <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl overflow-hidden">
                 <CardItem translateZ={30} className="w-full">
-                  <img src={hydraNet} alt="HydraLA-Net" className="w-full h-56 object-contain" />
+                  <img src={hydraNet} alt="HydraLA-Net" className="w-full h-56 object-contain" loading="lazy" />
                 </CardItem>
                 <div className="p-6">
                   <h3 className="text-2xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Progressive Optimization of HydraLA-Net for Microaneursym Segmentation</h3>
@@ -326,7 +326,7 @@ function App() {
             <CardBody className="w-full">
               <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl overflow-hidden">
                 <CardItem translateZ={30} className="w-full">
-                  <img src={arxtract} alt="Arxtract" className="w-full h-56 object-contain" />
+                  <img src={arxtract} alt="Arxtract" className="w-full h-56 object-contain" loading="lazy" />
                 </CardItem>
                 <div className="p-6">
                   <h3 className="text-2xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>ArXtract: AI Search Engine for ML Research</h3>
@@ -379,7 +379,7 @@ function App() {
                           <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>BMath in Mathematics (Undeclared)</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={waterlooSeal} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={waterlooSeal} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
                       <p className="text-white/40 text-sm mt-2 text-left" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Current</p>
@@ -396,14 +396,14 @@ function App() {
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
               <div className="timeline-img w-1/2 pl-12">
-                <img src={waterlooimage} alt="waterloo" className="w-full rounded-2xl object-cover h-48" />
+                <img src={waterlooimage} alt="waterloo" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
               </div>
 
             {/* Item 2 - Right */}
             <div className="timeline-item relative flex items-center">
               <div className="timeline-img w-1/2 pr-12">
-                <img src={bcssImage} alt="bcss" className="w-full h-48 object-cover rounded-2xl" />
+                <img src={bcssImage} alt="bcss" className="w-full h-48 object-cover rounded-2xl" loading="lazy" />
               </div>
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
@@ -413,7 +413,7 @@ function App() {
                     <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={bcss} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={bcss} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Bill Crothers Secondary School</h3>
@@ -467,7 +467,7 @@ function App() {
                           <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>University of Waterloo</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={warriorHelm} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={warriorHelm} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Current</p>
@@ -481,14 +481,14 @@ function App() {
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
               <div className="timeline-img w-1/2 pl-12">
-                <img src={xcteam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" />
+                <img src={xcteam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
             </div>
 
             {/* Item 2 - Right */}
             <div className="timeline-item relative flex items-center">
               <div className="timeline-img w-1/2 pr-12">
-                <img src={uttcTeam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" />
+                <img src={uttcTeam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
@@ -498,7 +498,7 @@ function App() {
                     <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={torontoTrack} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={torontoTrack} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>XC & Track Athlete</h3>
@@ -527,7 +527,7 @@ function App() {
                           <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>Tennis Canada</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
-                          <img src={tennisCanada} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" />
+                          <img src={tennisCanada} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Mar 2018 - June 2022</p>
@@ -541,7 +541,7 @@ function App() {
               {/* Dot */}
               <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
               <div className="timeline-img w-1/2 pl-12">
-                <img src={avivaCentre} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" />
+                <img src={avivaCentre} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
             </div>
 

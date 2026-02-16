@@ -87,13 +87,13 @@ export default function HexagonBackground({
                 <div
                   key={`${rowIndex}-${colIndex}`}
                   className={cn(
-                    "relative shrink-0 transition-all duration-1000",
+                    "relative shrink-0",
                     "[clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]",
                     "before:absolute before:inset-0 before:bg-[var(--border-color)]",
-                    "before:transition-all before:duration-1000",
+                    "before:transition-[background-color,box-shadow] before:duration-1000",
                     "after:absolute after:inset-[var(--margin)] after:bg-[#01030a]",
                     "after:[clip-path:polygon(50%_0%,100%_25%,100%_75%,50%_100%,0%_75%,0%_25%)]",
-                    "after:transition-all after:duration-500",
+                    "after:transition-[background-color] after:duration-500",
                     "hover:before:bg-[var(--glow-color)] hover:before:duration-0",
                     "hover:after:bg-[#0a0d14] hover:after:duration-0",
                     "hover:before:shadow-[0_0_20px_var(--glow-color)]"
