@@ -273,7 +273,7 @@ function App() {
       {/* Technical Skills */}
       <section id="skills" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
         <HexagonBackground />
-        <div className="relative z-10 w-full border border-white/50 rounded-2xl pt-10 pb-6 px-6">
+        <div className="relative z-10 w-full border border-white/50 rounded-2xl pt-10 pb-6 px-6 skills-box">
           <h2
             className="skills-title absolute -top-7 left-8 text-white leading-none px-4"
             style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem', backgroundColor: '#01030a' }}

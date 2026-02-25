@@ -108,6 +108,13 @@ a, button {
   .skills-title {
     top: -1.25rem !important;
   }
+
+}
+
+@media (max-width: 475px) {
+  .skills-box {
+    padding-top: 5rem !important;
+  }
 }
 
 @media (max-width: 575px) {
@@ -133,13 +140,7 @@ a, button {
 
 @media (max-width: 570px) {
   section h3 {
-    font-size: 1.25rem !important;
-  }
-}
-
-@media (max-width: 450px) {
-  section h3 {
-    font-size: 1.0rem !important;
+    font-size: 1.35rem !important;
   }
 }
 
