@@ -137,7 +137,8 @@ function App() {
                   <p>
                     Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo 
                     with an intended major in Data Science. This summer, I’ll be joining the Hospital 
-                    for Sick Children as an ML Research Assistant.
+                    for Sick Children as a Machine Learning Research Assistant, working with generative models
+                    for drug discovery.
                   </p>
                   <p className="mt-3">
                     Outside academics, I have over four years of experience coaching tennis and I
@@ -296,7 +297,7 @@ function App() {
                 </CardItem>
                 <div className="p-6">
                   <h3 className="text-2xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Progressive Optimization of HydraLA-Net for Microaneursym Segmentation</h3>
-                  <p className="text-white/40 text-xs mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Current</p>
+                  <p className="text-white/40 text-xs mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Feb 2026</p>
                   <ul className="text-white/80 text-sm mt-3 leading-relaxed list-disc list-outside ml-5" style={{ fontFamily: "'Inter', sans-serif" }}>
                     <li>Designed and trained (via SSH) HydraLA-Net (U-Net Variation) models for the semantic segmentation of
                         microaneurysms, hemorrhage, soft and hard exudates from scratch in PyTorch.</li>
