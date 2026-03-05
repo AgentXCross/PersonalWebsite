@@ -135,8 +135,7 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo 
-                    with an intended major in Data Science. This summer, I’ll be joining the Hospital 
+                    Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo. This summer, I’ll be joining the Hospital 
                     for Sick Children as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
