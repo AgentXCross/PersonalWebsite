@@ -135,13 +135,16 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo. This summer, I’ll be joining the Hospital 
+                    Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo. 
+                    I intend to declare my major in Applied Mathematics with 
+                    Scientific Computing and Scientific Machine Learning (AMATH Sci-ML) by the end of this term.
+                    This summer, I’ll be joining the Hospital 
                     for Sick Children as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
                   <p className="mt-3">
-                    Outside academics, I have over four years of experience coaching tennis and I
-                    compete as a Varsity Cross-Country athlete for the University of Waterloo.
+                    Outside academics, I have over four years of experience coaching tennis at Unionville Tennis 
+                    Club and I compete as a Varsity Cross-Country athlete for the University of Waterloo.
                   </p>
                 </div>
                 <CardItem translateZ={30} className="flex-shrink-0 about-img">
@@ -184,9 +187,9 @@ function App() {
                           <img src={sickKids} alt="sick-kids" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
                         </CardItem>
                       </div>
-                      <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Incoming Spring/Summer 2026</p>
+                      <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>May 2026 - Aug 2026</p>
                       <p className="text-white/80 text-base mt-3 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        Machine Learning for Drug Discovery
+                        Incoming S26 | Machine Learning for Drug Discovery
                       </p>
                     </CardItem>
                   </CardBody>
