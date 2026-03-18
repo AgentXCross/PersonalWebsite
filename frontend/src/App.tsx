@@ -394,7 +394,7 @@ function App() {
                       <ul className="text-white/80 text-base mt-3 leading-relaxed text-left list-disc list-outside ml-5" style={{ fontFamily: "'Inter', sans-serif" }}>
                         <li>Major Average: 94% | Cumulative Average: 93%</li>
                         <li>Hershel and Mary Anne Harris Scholarship, President's Scholarship of Distinction</li>
-                        <li>Coursework: Linear Algebra, Functional Programming, Imperative Programming, Calculus, Probability</li>
+                        <li>Coursework: Linear Algebra, Functional Programming, Imperative Programming & Data Structures, Calculus, Probability</li>
                         <li>Varsity XC, WAT.ai Design Team</li>
                       </ul>
                     </CardItem>
@@ -434,7 +434,7 @@ function App() {
                         <li>Academic Accomplishment Award, Excellence in Mathematics Award, Ontario Scholar, Honour Roll</li>
                         <li>8x UWaterloo Math Contest School Champion + Certificate of Distinction</li>
                         <li>4x OFSAA Track/XC</li>
-                        <li>Subject Awards: Calculus & Vectors, English, Gym Leadership, Chemistry, Physics</li>
+                        <li>Subject Awards: Calculus & Vectors, Advanced Functions, English, Gym Leadership, Chemistry, Physics</li>
                       </ul>
                     </CardItem>
                   </CardBody>
