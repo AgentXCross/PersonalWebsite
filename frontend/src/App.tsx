@@ -135,14 +135,16 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm a 1B Honours Mathematics student at the University of Waterloo. 
+                    Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo. 
                     I intend to declare my major in Applied Mathematics with 
-                    Scientific Computing and Scientific Machine Learning (AMATH Sci-ML) by the end of this term.
-                    This summer, I’ll be joining the Hospital 
-                    for Sick Children as a Machine Learning Research Assistant, working with generative models
+                    Scientific Computing and Scientific Machine Learning (AMATH-SciML).
+                    This summer, I’ll excited to be joining the Hospital 
+                    for Sick Children (SickKids) as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
                   <p className="mt-3">
+                    Post graduation, I intend to pursue a PhD in Machine Learning, with a focus on Computer Vision 
+                    for medical imaging and healthcare applications.
                     Outside academics, I have over four years of experience coaching tennis at Unionville Tennis 
                     Club and I compete as a Varsity Cross-Country athlete for the University of Waterloo.
                   </p>
@@ -392,7 +394,7 @@ function App() {
                       </div>
                       <p className="text-white/40 text-sm mt-2 text-left" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Current</p>
                       <ul className="text-white/80 text-base mt-3 leading-relaxed text-left list-disc list-outside ml-5" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        <li>Major Average: 94% | Cumulative Average: 93%</li>
+                        <li>Major Average: 94% | Cumulative Average: 93% | GPA: 3.98/4.00</li>
                         <li>Hershel and Mary Anne Harris Scholarship, President's Scholarship of Distinction</li>
                         <li>Coursework: Linear Algebra, Functional Programming, Imperative Programming & Data Structures, Calculus, Probability</li>
                         <li>Varsity XC, WAT.ai Design Team</li>
