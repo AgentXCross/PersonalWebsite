@@ -136,8 +136,7 @@ function App() {
                 >
                   <p>
                     Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo. 
-                    I intend to declare my major in Applied Mathematics with 
-                    Scientific Computing and Scientific Machine Learning (AMATH-SciML).
+                    I intend to declare my major in Data Science.
                     This summer, I’ll excited to be joining the Hospital 
                     for Sick Children (SickKids) as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
@@ -191,7 +190,7 @@ function App() {
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>May 2026 - Aug 2026</p>
                       <p className="text-white/80 text-base mt-3 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        Incoming S26 | Machine Learning for Drug Discovery
+                        Incoming S26 | Molecular Generation
                       </p>
                     </CardItem>
                   </CardBody>
