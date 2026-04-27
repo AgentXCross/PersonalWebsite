@@ -137,7 +137,7 @@ function App() {
                   <p>
                     Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo. 
                     I intend to declare my major in Data Science.
-                    This summer, I’ll excited to be joining the Hospital 
+                    This summer, I’m excited to be joining the Hospital 
                     for Sick Children (SickKids) as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
