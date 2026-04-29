@@ -393,9 +393,9 @@ function App() {
                       </div>
                       <p className="text-white/40 text-sm mt-2 text-left" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Current</p>
                       <ul className="text-white/80 text-base mt-3 leading-relaxed text-left list-disc list-outside ml-5" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        <li>Major Average: 94% | Cumulative Average: 93% | GPA: 3.98/4.00</li>
+                        <li>Major Average: 93.1% | Cumulative Average: 92.7% | GPA: 3.98/4.00</li>
                         <li>Hershel and Mary Anne Harris Scholarship, President's Scholarship of Distinction</li>
-                        <li>Coursework: Linear Algebra, Functional Programming, Imperative Programming & Data Structures, Calculus, Probability</li>
+                        <li>Coursework: Linear Algebra, Functional Programming, Imperative Programming & Data Structures, Calculus, Probability & Statistics</li>
                         <li>Varsity XC, WAT.ai Design Team</li>
                       </ul>
                     </CardItem>
