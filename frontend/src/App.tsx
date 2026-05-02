@@ -69,7 +69,7 @@ function App() {
     return () => observer.disconnect();
   }, []);
   return (
-    <div className="text-white" style={{ backgroundColor: '#01030a' }}>
+    <div className="text-white" style={{ backgroundColor: '#02060e' }}>
       <NavBar />
       {/* Hero */}
       <section id="hero" className="flex flex-col items-center justify-start px-16 pt-24 pb-16 relative overflow-hidden">
@@ -120,7 +120,7 @@ function App() {
       <section id="about" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
         <CardContainer className="relative z-10 w-full" containerClassName="py-0 w-full">
           <CardBody className="w-full">
-            <CardItem translateZ={20} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-8">
+            <CardItem translateZ={20} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-8">
               <CardItem translateZ={10} className="w-full">
                 <h2
                   className="text-white leading-none mb-8"
@@ -177,7 +177,7 @@ function App() {
               <div className="timeline-card w-1/2 pr-12 text-right">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Machine Learning Research Assistant</h3>
@@ -212,7 +212,7 @@ function App() {
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
                           <img src={watai} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
@@ -237,7 +237,7 @@ function App() {
               <div className="timeline-card w-1/2 pr-12 text-right">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Tennis Instructor</h3>
@@ -293,7 +293,7 @@ function App() {
           {/* Project 1 */}
           <CardContainer className="w-full" containerClassName="py-0 w-full">
             <CardBody className="w-full">
-              <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl overflow-hidden">
+              <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl overflow-hidden">
                 <CardItem translateZ={30} className="w-full">
                   <img src={hydraNet} alt="HydraLA-Net" className="w-full h-56 object-contain" loading="lazy" />
                 </CardItem>
@@ -326,7 +326,7 @@ function App() {
           {/* Project 2 */}
           <CardContainer className="w-full" containerClassName="py-0 w-full">
             <CardBody className="w-full">
-              <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl overflow-hidden">
+              <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl overflow-hidden">
                 <CardItem translateZ={30} className="w-full">
                   <img src={arxtract} alt="Arxtract" className="w-full h-56 object-contain" loading="lazy" />
                 </CardItem>
@@ -380,7 +380,7 @@ function App() {
               <div className="timeline-card w-1/2 pr-12 text-right">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>University of Waterloo</h3>
@@ -418,7 +418,7 @@ function App() {
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
                           <img src={bcss} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
@@ -468,7 +468,7 @@ function App() {
               <div className="timeline-card w-1/2 pr-12 text-right">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Varsity XC Athlete</h3>
@@ -503,7 +503,7 @@ function App() {
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3">
                         <CardItem translateZ={80} className="flex-shrink-0">
                           <img src={torontoTrack} alt="logo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
@@ -528,7 +528,7 @@ function App() {
               <div className="timeline-card w-1/2 pr-12 text-right">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
-                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border border-white/10 rounded-2xl p-6">
+                    <CardItem translateZ={50} className="w-full bg-[#1c1c1e] border-2 border-white/10 rounded-2xl p-6">
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>Tennis Athlete</h3>

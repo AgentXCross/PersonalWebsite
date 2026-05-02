@@ -13,8 +13,8 @@ export default function HexagonBackground({
   className,
   hexagonSize = 60,
   hexagonMargin = 2,
-  glowColor = "rgb(165, 230, 0)",
-  borderColor = "rgba(74, 79, 50, 0.53)",
+  glowColor = "rgb(223, 26, 160)",
+  borderColor = "rgba(162, 0, 110, 0.44)",
 }: HexagonBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [grid, setGrid] = useState({ rows: 0, cols: 0, scale: 1 });
