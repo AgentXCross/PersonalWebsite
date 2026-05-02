@@ -135,16 +135,15 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo. 
-                    I intend to declare my major in Data Science.
-                    This summer, I’m excited to be joining the Hospital 
+                    Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo
+                    with an intended major in Data Science.
+                    This summer, I’ll be joining the Hospital 
                     for Sick Children (SickKids) as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
                   <p className="mt-3">
-                    Post graduation, I intend to pursue a PhD in Machine Learning, with a focus on Computer Vision 
-                    for medical imaging and healthcare applications.
-                    Outside academics, I have over four years of experience coaching tennis at Unionville Tennis 
+                    Post graduation, I intend to pursue a PhD in Machine Learning with a focus on Computer Vision.
+                    Outside of academics, I have over four years of experience coaching tennis at Unionville Tennis 
                     Club and I compete as a Varsity Cross-Country athlete for the University of Waterloo.
                   </p>
                 </div>
