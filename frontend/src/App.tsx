@@ -189,14 +189,14 @@ function App() {
                       </div>
                       <p className="text-white/40 text-sm mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>May 2026 - Aug 2026</p>
                       <p className="text-white/80 text-base mt-3 leading-relaxed" style={{ fontFamily: "'Inter', sans-serif" }}>
-                        Incoming S26 | Molecular Generation
+                        Molecular Generation
                       </p>
                     </CardItem>
                   </CardBody>
                 </CardContainer>
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-img w-1/2 pl-12">
                 <img src={sickKidsHospital} alt="SickKids Hospital" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
@@ -208,7 +208,7 @@ function App() {
                 <img src={wataiImage} alt="WAT.ai" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
@@ -256,7 +256,7 @@ function App() {
                 </CardContainer>
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-img w-1/2 pl-12">
                 <img src={utcImage} alt="Unionville Tennis Club" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
@@ -267,15 +267,15 @@ function App() {
       </section>
 
       {/* Technical Skills */}
-      <section id="skills" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
+      <section id="skills" className="fade-in-section flex flex-col items-start justify-start px-25 py-8 relative overflow-hidden">
         <HexagonBackground />
-        <div className="relative z-10 w-full border border-white/50 rounded-2xl pt-10 pb-6 px-6 skills-box">
-          <h2
-            className="skills-title absolute -top-7 left-8 text-white leading-none px-4"
-            style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem', backgroundColor: '#01030a' }}
-          >
-            TECHNICAL SKILLS
-          </h2>
+        <h2
+          className="relative z-10 text-white leading-none mb-8"
+          style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
+        >
+          TECHNICAL SKILLS
+        </h2>
+        <div className="relative z-10 w-full">
           <SkillDock />
         </div>
       </section>
@@ -360,7 +360,7 @@ function App() {
 
       {/* Education */}
       <section id="education" className="fade-in-section relative flex flex-col items-start justify-start px-25 py-12 overflow-hidden">
-        <img src={waterlooSeal} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.09 }} />
+        <img src={waterlooSeal} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.17 }} />
         <h2
           className="relative z-10 text-white leading-none mb-16"
           style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
@@ -402,7 +402,7 @@ function App() {
                 </CardContainer>
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-img w-1/2 pl-12">
                 <img src={waterlooimage} alt="waterloo" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
@@ -414,7 +414,7 @@ function App() {
                 <img src={bcssImage} alt="bcss" className="w-full h-48 object-cover rounded-2xl" loading="lazy" />
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
@@ -448,7 +448,7 @@ function App() {
 
       {/* Extracurriculars */}
       <section id="extracurriculars" className="fade-in-section flex flex-col items-start justify-start px-25 py-12 relative overflow-hidden">
-        <img src={warriorHelm} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.21 }} />
+        <img src={warriorHelm} alt="" className="absolute inset-0 w-full h-full object-contain pointer-events-none z-0" style={{ opacity: 0.25 }} />
         <h2
           className="relative z-10 text-white leading-none mb-16"
           style={{ fontFamily: "'Klein Condensed', sans-serif", fontWeight: 800, fontSize: '4rem' }}
@@ -487,7 +487,7 @@ function App() {
                 </CardContainer>
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-img w-1/2 pl-12">
                 <img src={xcteam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
@@ -499,7 +499,7 @@ function App() {
                 <img src={uttcTeam} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-card timeline-card-right w-1/2 pl-12">
                 <CardContainer className="w-full" containerClassName="py-0 w-full">
                   <CardBody className="w-full">
@@ -547,7 +547,7 @@ function App() {
                 </CardContainer>
               </div>
               {/* Dot */}
-              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#d0ff00] z-10" />
+              <div className="timeline-dot absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#FF1493] z-10" />
               <div className="timeline-img w-1/2 pl-12">
                 <img src={avivaCentre} alt="Placeholder" className="w-full rounded-2xl object-cover h-48" loading="lazy" />
               </div>
