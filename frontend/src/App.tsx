@@ -135,14 +135,11 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm currently a 1B Honours Mathematics student at the University of Waterloo
-                    with an intended major in Data Science.
-                    This summer, I’ll be joining the Hospital 
-                    for Sick Children (SickKids) as a Machine Learning Research Assistant, working with generative models
+                    Hi, I’m Michael! I'm currently a 1B BMath Computer Science student at the University of Waterloo.
+                    This summer, I’ll be joining SickKids as a Machine Learning Research Assistant, working with generative models
                     for drug discovery.
                   </p>
                   <p className="mt-3">
-                    Post graduation, I intend to pursue a PhD in Machine Learning with a focus on Computer Vision.
                     Outside of academics, I have over four years of experience coaching tennis at Unionville Tennis 
                     Club and I compete as a Varsity Cross-Country athlete for the University of Waterloo.
                   </p>
@@ -384,7 +381,7 @@ function App() {
                       <div className="flex items-center gap-3 justify-end">
                         <div>
                           <h3 className="text-3xl" style={{ fontFamily: "'Inter', sans-serif", fontWeight: 800 }}>University of Waterloo</h3>
-                          <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>BMath in Mathematics (Undeclared)</p>
+                          <p className="text-white/60 text-base mt-1" style={{ fontFamily: "'Inter', sans-serif" }}>BMath in Computer Science</p>
                         </div>
                         <CardItem translateZ={80} className="flex-shrink-0">
                           <img src={waterlooSeal} alt="waterloo" className="w-22 h-22 rounded-lg object-contain bg-white/10 p-1" loading="lazy" />
