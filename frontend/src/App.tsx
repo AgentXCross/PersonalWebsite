@@ -299,9 +299,9 @@ function App() {
                   <p className="text-white/40 text-xs mt-2" style={{ fontFamily: "'Inter', sans-serif" }}>Sept 2025 - Feb 2026</p>
                   <ul className="text-white/80 text-sm mt-3 leading-relaxed list-disc list-outside ml-5" style={{ fontFamily: "'Inter', sans-serif" }}>
                     <li>Designed and trained (via SSH) HydraLA-Net (U-Net Variation) models for the semantic segmentation of
-                        microaneurysms, hemorrhage, soft and hard exudates from scratch in PyTorch.</li>
+                        microaneurysms, hemorrhages, soft, and hard exudates from scratch in PyTorch.</li>
                     <li>Wrote task-specific loss functions (e.g. Focal Tversky) to address class imbalance.</li>
-                    <li>Conducting ablation studies on applications of contrast enchancement preprocessing and loss function
+                    <li>Conducted ablation studies on applications of contrast enchancement preprocessing and loss function
                       selection to improve small-lesion segmentation performance.</li>
                     <li>Released Research Paper detailing methodology and results.</li>
                   </ul>
