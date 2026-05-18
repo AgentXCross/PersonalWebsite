@@ -19,12 +19,15 @@ import cssIcon from "../assets/css.svg";
 import htmlIcon from "../assets/html.svg";
 import tailwindIcon from "../assets/tailwindcss.svg";
 import latexIcon from "../assets/latex.svg";
+import opencvIcon from "../assets/opencv.svg";
+import scipyIcon from "../assets/scipy.svg";
 
 const skills: DockItem[] = [
   { id: "python", icon: pythonIcon },
   { id: "c", icon: cIcon },
   { id: "typescript", icon: tsIcon },
   { id: "pytorch", icon: pytorchIcon },
+  { id: "opencv", icon: opencvIcon },
   { id: "react", icon: reactIcon },
   { id: "bash", icon: bashIcon },
   { id: "sql", icon: sqlIcon },
@@ -40,6 +43,7 @@ const skills: DockItem[] = [
   { id: "html", icon: htmlIcon },
   { id: "tailwind", icon: tailwindIcon },
   { id: "latex", icon: latexIcon },
+  { id: "scipy", icon: scipyIcon },
 ];
 
 export default function SkillDock() {

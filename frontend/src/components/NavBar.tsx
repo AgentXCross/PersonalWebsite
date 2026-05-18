@@ -5,7 +5,7 @@ export default function NavBar() {
     <div className="fixed top-4 left-0 w-full z-50 flex justify-center px-6">
       <nav
         className="w-full max-w-6xl flex items-center justify-between px-8 py-2 rounded-full"
-        style={{ backgroundColor: "#d0ff00" }}
+        style={{ backgroundColor: "#daff0f" }}
       >
         {/* Left - Name */}
         <span
