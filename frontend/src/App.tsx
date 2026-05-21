@@ -267,8 +267,8 @@ function App() {
 
       {/* Technical Skills */}
       <section id="skills" className="fade-in-section flex flex-col items-start justify-start px-25 py-8 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.25] pointer-events-none">
-          <MatrixBackground color="#1f8600" fontSize={14} />
+        <div className="absolute inset-0 opacity-[0.60] pointer-events-none">
+          <MatrixBackground color="#007213" fontSize={14} />
         </div>
         <h2
           className="relative z-10 text-white leading-none mb-8"
