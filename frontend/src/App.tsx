@@ -137,8 +137,8 @@ function App() {
                   style={{ fontFamily: "'Inter', sans-serif" }}
                 >
                   <p>
-                    Hi, I’m Michael! I'm currently a 1B Computer Science student at the University of Waterloo.
-                    This summer, I’ll be joining SickKids as a Machine Learning Research Assistant, researching reaction-based generative models
+                    Hi, I’m Michael! I'm currently a 2A BCS Computer Science student at the University of Waterloo.
+                    This summer, I'm working at SickKids as a Machine Learning Research Assistant, researching reaction-based generative models
                     for drug discovery.
                   </p>
                   <p className="mt-3">
