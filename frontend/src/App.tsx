@@ -139,7 +139,7 @@ function App() {
                   <p>
                     Hi, I’m Michael! I'm currently a 2A BCS Computer Science student at the University of Waterloo.
                     This summer, I'm working at SickKids as a Machine Learning Research Assistant, researching reaction-based generative models
-                    for drug discovery.
+                    for drug discovery. My primary interests are in Embedded Systems, Machine Learning, and Computer Vision.
                   </p>
                   <p className="mt-3">
                     Outside of academics, I have over four years of experience coaching tennis at Unionville Tennis 

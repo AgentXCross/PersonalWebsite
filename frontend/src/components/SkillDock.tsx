@@ -1,5 +1,6 @@
 import MacOSDock, { type DockItem } from "./MacOSDock";
 
+import cppIcon from "../assets/C++.svg";
 import pythonIcon from "../assets/python-original.svg";
 import cIcon from "../assets/C.svg";
 import bashIcon from "../assets/bash.svg";
@@ -23,8 +24,9 @@ import opencvIcon from "../assets/opencv.svg";
 import scipyIcon from "../assets/scipy.svg";
 
 const skills: DockItem[] = [
-  { id: "python", icon: pythonIcon },
+  { id: "c++", icon: cppIcon},
   { id: "c", icon: cIcon },
+  { id: "python", icon: pythonIcon },
   { id: "typescript", icon: tsIcon },
   { id: "pytorch", icon: pytorchIcon },
   { id: "opencv", icon: opencvIcon },
